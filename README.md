@@ -19,7 +19,13 @@ podman run -it --hostname redhat --name redhat --privileged redhat/ubi9 /bin/bas
 podman run -it --hostname fedora --name fedora --privileged fedora:latest /bin/bash
 ```
 
-Then, create a script with the following contents to setup fuse and permissions in order to run podman within podman:
+Then, run this script to setup fuse and permissions in order to run podman within a container:
+
+```bash
+curl https://raw.githubusercontent.com/chrisvarga/redhat/main/podman.sh | sh
+```
+
+You can also manually create the script with the following contents:
 
 >**Note**: Red Hat does not have "vim" only "vi"
 
