@@ -12,7 +12,7 @@ docker run -it --hostname rocky --name rocky --privileged rockylinux:9 /bin/bash
 ## Step 2: Setup fuse-overlayfs and container permissions
 
 ```bash
-curl https://raw.githubusercontent.com/chrisvarga/redhat/main/podman.sh | sh
+curl https://raw.githubusercontent.com/chrisvarga/rocky/main/podman.sh | sh
 ```
 
 And voila, you can now run podman within a container.
