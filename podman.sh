@@ -7,9 +7,9 @@ useradd podman; \
 echo podman:10000:5000 > /etc/subuid; \
 echo podman:10000:5000 > /etc/subgid;
 
-curl https://raw.githubusercontent.com/containers/libpod/master/contrib/podmanimage/stable/containers.conf > /etc/containers/containers.conf
+curl https://raw.githubusercontent.com/containers/common/main/pkg/config/containers.conf > /etc/containers/containers.conf
 mkdir -p /home/podman/.config/containers
-curl https://raw.githubusercontent.com/containers/libpod/master/contrib/podmanimage/stable/podman-containers.conf > /home/podman/.config/containers/containers.conf
+curl https://raw.githubusercontent.com/containers/common/main/pkg/config/containers.conf  > /home/podman/.config/containers/containers.conf
 
 chown podman:podman -R /home/podman
 
